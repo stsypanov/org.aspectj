@@ -41,7 +41,7 @@ public final class Conversions {
         return new Double(i);
     }
 	public static Object booleanObject(boolean i) {
-        return new Boolean(i);
+        return i;
     }
 	public static Object voidObject() {
         return null;

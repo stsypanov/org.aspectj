@@ -52,11 +52,11 @@ public abstract class AbstractTrace implements Trace {
 	}
 
 	public void enter (String methodName, Object thiz, boolean z) {
-		enter(methodName,thiz,new Boolean(z));
+		enter(methodName,thiz, Boolean.valueOf(z));
 	}
 
 	public void exit (String methodName, boolean b) {
-		exit(methodName,new Boolean(b));
+		exit(methodName, Boolean.valueOf(b));
 	}
 
 	public void exit (String methodName, int i) {

@@ -234,8 +234,8 @@ public class ExactTypePattern extends TypePattern {
 	public int hashCode() {
 		int result = 17;
 		result = 37 * result + type.hashCode();
-		result = 37 * result + new Boolean(includeSubtypes).hashCode();
-		result = 37 * result + new Boolean(isVarArgs).hashCode();
+		result = 37 * result + Boolean.valueOf(includeSubtypes).hashCode();
+		result = 37 * result + Boolean.valueOf(isVarArgs).hashCode();
 		result = 37 * result + typeParameters.hashCode();
 		result = 37 * result + annotationPattern.hashCode();
 		return result;

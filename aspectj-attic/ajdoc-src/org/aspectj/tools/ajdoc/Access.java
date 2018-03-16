@@ -112,7 +112,7 @@ public class Access {
                     "printNavSummaryLink",
                     new Class[]{ClassDoc.class,
                                 boolean.class},
-                    new Object[]{cd, new Boolean(link)});
+                    new Object[]{cd, link});
     }
     public static void printNavDetailLink(AbstractSubWriter mw,
                                           boolean link) {
@@ -120,7 +120,7 @@ public class Access {
                     mw.del(),
                     "printNavDetailLink",
                     new Class[]{boolean.class},
-                    new Object[]{new Boolean(link)});
+                    new Object[]{link});
     }
     public static void printTags(AbstractSubWriter mw,
                                  ProgramElementDoc member) {

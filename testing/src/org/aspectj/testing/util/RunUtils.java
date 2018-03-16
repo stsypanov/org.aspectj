@@ -178,10 +178,10 @@ public class RunUtils {
                 status.getIdentifier(),
                 status.getResult(),
                 numChildren,
-                new Boolean(status.isCompleted()),
+                status.isCompleted(),
                 //status.getParent(),               // costly if parent printing us
                 status.getAbortRequest(),
-                new Boolean(status.started()),
+                status.started(),
                 thrownString,
                 numMessages };
         return org.aspectj.testing.util.LangUtil.debugStr(status.getClass(), LABELS, values);

@@ -34,7 +34,7 @@ public class AroundAMain extends TestCase {
 			"ajc$perSingletonInstance");
 
 		Reflection.invoke(Class.forName("AroundA"), instance, "ajc$around$AroundA$1$73ebb943", // was $AroundA$46
-					new Integer(10), new Boolean(true), closure);
+					new Integer(10), Boolean.TRUE, closure);
 
 		Reflection.invoke(Class.forName("AroundA"), instance, "ajc$around$AroundA$2$a758212d",  // Was $AroundA$c5
 					"hello there", closure);

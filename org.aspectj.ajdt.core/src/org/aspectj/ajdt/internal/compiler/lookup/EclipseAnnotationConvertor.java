@@ -159,7 +159,7 @@ public class EclipseAnnotationConvertor {
 				return new SimpleAnnotationValue(ElementValue.PRIMITIVE_INT, new Integer(iConstant.intValue()));
 			} else if (c instanceof BooleanConstant) {
 				BooleanConstant iConstant = (BooleanConstant) c;
-				return new SimpleAnnotationValue(ElementValue.PRIMITIVE_BOOLEAN, new Boolean(iConstant.booleanValue()));
+				return new SimpleAnnotationValue(ElementValue.PRIMITIVE_BOOLEAN, iConstant.booleanValue());
 			} else if (c instanceof StringConstant) {
 				StringConstant sConstant = (StringConstant) c;
 				return new SimpleAnnotationValue(ElementValue.STRING, sConstant.stringValue());

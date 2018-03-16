@@ -64,6 +64,6 @@ public class VariableContext {
 	 */
 	
 	public void assign(VariableExpression varExp, boolean bool) {
-		assignments.put(varExp.getName(), new Boolean(bool));
+		assignments.put(varExp.getName(), bool);
 	}
 }

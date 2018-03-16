@@ -95,7 +95,7 @@ public class SimpleAnnotationValue extends AnnotationValue {
 		case 'S': // short
 			return Short.toString(theShort);
 		case 'Z': // boolean
-			return new Boolean(theBoolean).toString();
+			return Boolean.valueOf(theBoolean).toString();
 		case 's': // String
 			return theString;
 		default:
